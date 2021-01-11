@@ -28,7 +28,6 @@ export class UserFormComponent implements OnInit {
             emailId: ['', [Validators.required, Validators.pattern('[a-zA-Z0-9._]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$')]],
             password: ['', [Validators.required, Validators.minLength(8)]],
             phone: [''],
-            // notification: ['', [Validators.required]],
             notification: '',
             range: ['', [Validators.required, ratingRange(1,5)]]
         })
